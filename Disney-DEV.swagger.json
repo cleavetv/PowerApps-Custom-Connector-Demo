@@ -1,0 +1,361 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Disney DEV",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "api.disneyapi.dev",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/character/{id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "info": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "count"
+                    },
+                    "totalPages": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "totalPages"
+                    },
+                    "previousPage": {
+                      "type": "string",
+                      "description": "previousPage"
+                    },
+                    "nextPage": {
+                      "type": "string",
+                      "description": "nextPage"
+                    }
+                  },
+                  "description": "info"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "_id"
+                      },
+                      "films": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "films"
+                      },
+                      "shortFilms": {
+                        "type": "array",
+                        "items": {},
+                        "description": "shortFilms"
+                      },
+                      "tvShows": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "tvShows"
+                      },
+                      "videoGames": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "videoGames"
+                      },
+                      "parkAttractions": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "parkAttractions"
+                      },
+                      "allies": {
+                        "type": "array",
+                        "items": {},
+                        "description": "allies"
+                      },
+                      "enemies": {
+                        "type": "array",
+                        "items": {},
+                        "description": "enemies"
+                      },
+                      "sourceUrl": {
+                        "type": "string",
+                        "description": "sourceUrl"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "imageUrl": {
+                        "type": "string",
+                        "description": "imageUrl"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "description": "createdAt"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "description": "updatedAt"
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "url"
+                      },
+                      "__v": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "__v"
+                      }
+                    }
+                  },
+                  "description": "data"
+                }
+              }
+            },
+            "headers": {
+              "{": {
+                "description": "{",
+                "type": "string"
+              },
+              "\"content-length\"": {
+                "description": "\"content-length\"",
+                "type": "string"
+              },
+              "\"content-type\"": {
+                "description": "\"content-type\"",
+                "type": "string"
+              },
+              "\"date\"": {
+                "description": "\"date\"",
+                "type": "string"
+              },
+              "\"etag\"": {
+                "description": "\"etag\"",
+                "type": "string"
+              },
+              "\"nel\"": {
+                "description": "\"nel\"",
+                "type": "string"
+              },
+              "\"report-to\"": {
+                "description": "\"report-to\"",
+                "type": "string"
+              },
+              "\"reporting-endpoints\"": {
+                "description": "\"reporting-endpoints\"",
+                "type": "string"
+              },
+              "\"via\"": {
+                "description": "\"via\"",
+                "type": "string"
+              },
+              "\"x-ms-apihub-cached-response\"": {
+                "description": "\"x-ms-apihub-cached-response\"",
+                "type": "string"
+              },
+              "\"x-ms-apihub-obo\"": {
+                "description": "\"x-ms-apihub-obo\"",
+                "type": "string"
+              },
+              "\"x-powered-by\"": {
+                "description": "\"x-powered-by\"",
+                "type": "string"
+              },
+              "}": {
+                "description": "}",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "summary": "Get Character By Id",
+        "description": "Get Character By Id",
+        "operationId": "GetCharacterById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/character": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "info": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "count"
+                    },
+                    "totalPages": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "totalPages"
+                    },
+                    "previousPage": {
+                      "type": "string",
+                      "description": "previousPage"
+                    },
+                    "nextPage": {
+                      "type": "string",
+                      "description": "nextPage"
+                    }
+                  },
+                  "description": "info"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "_id"
+                      },
+                      "films": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "films"
+                      },
+                      "shortFilms": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "shortFilms"
+                      },
+                      "tvShows": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "tvShows"
+                      },
+                      "videoGames": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "videoGames"
+                      },
+                      "parkAttractions": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "parkAttractions"
+                      },
+                      "allies": {
+                        "type": "array",
+                        "items": {},
+                        "description": "allies"
+                      },
+                      "enemies": {
+                        "type": "array",
+                        "items": {},
+                        "description": "enemies"
+                      },
+                      "sourceUrl": {
+                        "type": "string",
+                        "description": "sourceUrl"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "imageUrl": {
+                        "type": "string",
+                        "description": "imageUrl"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "description": "createdAt"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "description": "updatedAt"
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "url"
+                      },
+                      "__v": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "__v"
+                      }
+                    }
+                  },
+                  "description": "data"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get Characters",
+        "description": "Get Characters",
+        "operationId": "GetCharacters",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
